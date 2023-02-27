@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landline Bill Payment</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		header {
+			background-color: #4caf50;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+		
+		form {
+			margin: 30px auto;
+			max-width: 500px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		
+		input[type=text], input[type=number], select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		
+		input[type=submit] {
+			background-color: #4caf50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		
+		input[type=submit]:hover {
+			background-color: #2e8b57;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Landline Bill Payment</h1>
+	</header>
+	
+	<form action="image/sucessful.jpg" method="post">
+		<label for="account-number">Account Number:</label>
+		<input type="text" id="account-number" name="account-number" placeholder="Enter your landline account number" required>
+		
+		<label for="name">Account Holder Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name as it appears on the account" required>
+		
+		<label for="phone-number">Phone Number:</label>
+		<input type="number" id="phone-number" name="phone-number" placeholder="Enter your phone number" required>
+		
+		<label for="amount">Amount:</label>
+		<input type="number" id="amount" name="amount" placeholder="Enter the amount you wish to pay" required>
+		
+		<label for="currency">Currency:</label>
+		<select id="currency" name="currency">
+			<option value="USD">INR</option>
+			<option value="EUR">USD</option>
+		</select>
+		
+		<input type="submit" value="Pay Now">
+	</form>
+</body>
+</html>

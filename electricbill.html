@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Insurance Payment</title>
+ <style>
+  form {
+   width: 50%;
+   margin: 0 auto;
+   border: 1px solid #ddd;
+   padding: 20px;
+  }
+
+  label {
+   display: block;
+   margin-bottom: 10px;
+  }
+
+  input[type="text"], input[type="email"], input[type="number"], input[type="date"], select {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 20px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+  }
+
+  input[type="submit"] {
+   background-color: #4CAF50;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+   background-color: #3e8e41;
+  }
+ </style>
+</head>
+<body>
+ <form action="image/sucessful.jpg" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <label for="policy">Policy Number:</label>
+  <input type="text" id="policy" name="policy" required>
+
+  <label for="amount">Amount:</label>
+  <input type="number" id="amount" name="amount" required>
+
+  <label for="card">Credit Card Number:</label>
+  <input type="text" id="card" name="card" required>
+
+  <label for="expiry">Expiry Date:</label>
+  <input type="date" id="expiry" name="expiry" required>
+
+  <label for="cvv">CVV:</label>
+  <input type="text" id="cvv" name="cvv" required>
+
+  <button type="submit">Submit</button>
+ </form>
+</body>
+</html>
